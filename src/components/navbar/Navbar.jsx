@@ -21,9 +21,15 @@ const Menu = () => (
   </>
 );
 
+const openBooksy = () => {
+  const button = document.querySelector(
+    '#booksy > .booksy-widget-container > .booksy-widget-button'
+  );
+  button.click();
+};
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const booksy = 'https://booksy.com/widget-2021/code.js?id=936569&country=us&lang=en-US';
 
   return (
     <div className="gpt3__navbar">
@@ -37,7 +43,7 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-sign">
         <p>Directions</p>
-        <button type="button" className="bg-black-900 text-black">
+        <button onClick={openBooksy} type="button" className="bg-black-900 text-black">
           Book Now
         </button>
       </div>
@@ -53,7 +59,7 @@ const Navbar = () => {
               <Menu />
               <div className="gpt3__navbar-menu_container-links-sign">
                 <p>Directions</p>
-                <button onClick={booksy} type="button" className="text-red">
+                <button onClick={openBooksy} type="button" className="text-red">
                   Book Now
                 </button>
               </div>
