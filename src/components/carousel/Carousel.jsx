@@ -1,3 +1,4 @@
+import React from 'react';
 /* eslint-disable no-undef */
 // eslint-disable-next-line no-unused-vars
 import SwiperCore, { Pagination, EffectCoverflow } from 'swiper';
@@ -16,7 +17,10 @@ const Carousel = ({ images }) => {
         <div className="slide-content">
           <img
             className="photos"
-            src={require('../../assets/' + image.folder + '/' + image.photo + image.fileExtension)}
+            src={
+              require('../../assets/' + image.folder + '/' + image.photo + image.fileExtension)
+                .default
+            }
           />
         </div>
       </SwiperSlide>
