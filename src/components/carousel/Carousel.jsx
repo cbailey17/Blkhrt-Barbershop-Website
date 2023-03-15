@@ -1,67 +1,65 @@
 /* eslint-disable no-undef */
-import Swiper, { Navigation, Pagination } from 'swiper';
+// eslint-disable-next-line no-unused-vars
+import SwiperCore, { Pagination, EffectCoverflow } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 import './carousel.css';
 import PropTypes from 'prop-types';
 
 const Carousel = ({ images }) => {
   const slides = images.map((image) => {
     return (
-      <div key={image.id} className="swiper-slide">
+      <SwiperSlide key={image.id} className="swiper-slide">
         <div className="slide-content">
           <img
-            className="cuts"
-            src={require('../../assets/' + image.folder + '/' + image.photo + '.jpg')}
+            className="photos"
+            src={require('../../assets/' + image.folder + '/' + image.photo + image.fileExtension)}
           />
         </div>
-      </div>
+      </SwiperSlide>
     );
   });
 
-  const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Pagination],
-    effect: 'coverflow',
-    loop: true,
-    centeredSlides: true,
-    slidesPerView: 3,
-    initialSlide: 0,
-    keyboardControl: true,
-    mousewheelControl: true,
-    lazyLoading: true,
-    preventClicks: false,
-    preventClicksPropagation: false,
-    lazyLoadingInPrevNext: true,
-    coverflow: {
-      rotate: 0,
-      stretch: 0,
-      depth: 250,
-      modifier: 1,
-      slideShadows: true
-    },
-    pagination: {
-      el: '.swiper-pagination'
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar'
-    }
-  });
-  swiper;
-
   return (
-    <div className="row swiper mt-24">
-      <div className="swiper-wrapper">{slides}</div>
-
-      <div className="swiper-button-prev"></div>
-      <div className="swiper-button-next"></div>
-      <div className="swiper-pagination"></div>
-
-      <div className="swiper-scrollbar"></div>
+    <div className="photo-container">
+      <Swiper
+        effect="coverflow"
+        grabCursor="true"
+        centeredSlides="true"
+        spaceBetween={0}
+        slidesPerView={4}
+        loop="true"
+        pagination={{ clickable: true, dynamicBullets: true }}
+        coverflowEffect={{
+          rotate: 20,
+          stretch: 25,
+          depth: 250,
+          modifier: 1,
+          slideShadows: false
+        }}
+        breakpoints={{
+          700: {
+            spaceBetween: 0,
+            slidesPerView: 4
+          },
+          500: {
+            spaceBetween: 100,
+            slidesPerView: 2
+          },
+          411: {
+            spaceBetween: 100,
+            slidesPerView: 2
+          },
+          300: {
+            spaceBetween: 0,
+            slidesPerView: 1
+          }
+        }}>
+        {slides}
+      </Swiper>
     </div>
   );
 };

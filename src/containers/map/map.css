@@ -4,3 +4,9 @@
     left: calc(100vw - 95vw);
     border-radius: 10px;
 }
+
+#contact {
+    margin-bottom: 50px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
