@@ -1,4 +1,4 @@
-// import Swiper and modules styles
+/* eslint-disable no-undef */
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,7 +9,7 @@ const Carousel = ({ images }) => {
   const slides = images.map((image) => {
     return (
       <div key={image.id} className="swiper-slide">
-        <img src={image.photo} />
+        <img src={require('../../assets/' + image.folder + '/' + image.photo + '.jpg')} />
       </div>
     );
   });
@@ -42,7 +42,7 @@ const Carousel = ({ images }) => {
   swiper;
 
   return (
-    <div className="swiper w-[600px] h-[300px]">
+    <div className="swiper w-[350px] h-[410px] mt-24">
       <div className="swiper-wrapper">{slides}</div>
       <div className="swiper-pagination"></div>
 

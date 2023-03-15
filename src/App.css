@@ -11,11 +11,21 @@ body, html {
 
 body {
   background: var(--color-bg);
+  /* overflow: hidden; */
 }
 
 a {
   color: unset;
   text-decoration: none;
+}
+
+.fab {
+  margin: 0px;
+  top: auto;
+  right: 20px;
+  bottom: 25px;
+  left: auto;
+  position: fixed !important;
 }
 
 .gradient__bg {

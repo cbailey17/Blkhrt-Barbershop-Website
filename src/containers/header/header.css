@@ -45,17 +45,35 @@
   text-align: center;
 }
 
+.book {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #e09145;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 120px;
+  box-shadow: 0 0 40px 10px #fff, /* inner white */ 0 0 90px 30px #EE4B2B, /* middle magenta */ 0 0 140px 15px rgb(49, 7, 7);
+}
+
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/banner.jpg");
 
   /* Set a specific height */
-  min-height: 50%;
+  height: 60vh;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  box-shadow: 0 0 10px 10px rgb(1, 2, 43) inset;
+  border-radius: 6px;
 }
 
 /* Place text in the middle of the image */

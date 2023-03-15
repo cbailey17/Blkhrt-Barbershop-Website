@@ -1,18 +1,22 @@
 export const images = [
   {
     id: 1,
-    photo: '../../assets/cuts/cut1.jpg'
+    photo: 'cut1',
+    folder: 'cuts'
   },
   {
     id: 2,
-    photo: '../../assets/cuts/cut2.jpg'
+    photo: 'cut2',
+    folder: 'cuts'
   },
   {
     id: 3,
-    photo: '../../assets/cuts/cut3.jpg'
+    photo: 'cut3',
+    folder: 'cuts'
   },
   {
     id: 4,
-    photo: '../../assets/cuts/cut4.jpg'
+    photo: 'cut4',
+    folder: 'cuts'
   }
 ];
