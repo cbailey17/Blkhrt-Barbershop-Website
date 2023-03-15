@@ -2,6 +2,7 @@ import React from 'react';
 import './header.css';
 import { BsArrowDownCircle } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import { openBooksy } from '../../hooks/openBooksy';
 
 const Header = () => (
   <div className="hero-image gpt3__header section__padding" id="home">
@@ -13,7 +14,10 @@ const Header = () => (
           <BsArrowDownCircle className="pl-5 w-70 grow inline" color="#fff" size={44} id="arrow" />
         </motion.div>
       </p>
-      <button type="button" className="book z-10 text-white rounded-md w-24 py-0.5 mt-16">
+      <button
+        onClick={openBooksy}
+        type="button"
+        className="book z-10 text-white rounded-md w-24 py-0.5 mt-16">
         Book Now
       </button>
     </div>

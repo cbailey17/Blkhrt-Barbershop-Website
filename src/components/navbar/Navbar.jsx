@@ -3,6 +3,7 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 import logo from '../../assets/logo.png';
 import { useState } from 'react';
+import { openBooksy } from '../../hooks/openBooksy';
 
 const Menu = () => (
   <>
@@ -20,13 +21,6 @@ const Menu = () => (
     </p>
   </>
 );
-
-const openBooksy = () => {
-  const button = document.querySelector(
-    '#booksy > .booksy-widget-container > .booksy-widget-button'
-  );
-  button.click();
-};
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);

@@ -16,9 +16,8 @@
   --color-subtext: #ff8a71;
 }
 
-#booksy {
-  .booksy-widget-container {
-       display: none !important;
-  }
+.booksy-widget-container {
+      display: none !important;
 }
+
 
