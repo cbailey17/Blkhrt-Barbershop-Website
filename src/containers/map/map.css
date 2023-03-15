@@ -1,0 +1,6 @@
+.map {
+    width: 90vw;
+    position: relative;
+    left: calc(100vw - 95vw);
+    border-radius: 10px;
+}

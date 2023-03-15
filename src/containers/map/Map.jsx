@@ -1,13 +1,14 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import airplane from '../../assets/airplane.png';
+import './map.css';
 
 const Gmap = () => {
   return (
     <div>
       <div id="map">
         <iframe
-          className=""
+          className="map"
           referrerPolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpvPj658khiER_se2HT21-QoDcuayH4UQ&q=BLKHRT"
           allowFullScreen

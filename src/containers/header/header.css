@@ -74,6 +74,8 @@
   position: relative;
   box-shadow: 0 0 10px 10px rgb(1, 2, 43) inset;
   border-radius: 6px;
+  overflow-x: hidden;
+  margin-bottom: 50px;
 }
 
 /* Place text in the middle of the image */
@@ -126,6 +128,10 @@
   .gpt3__header-content h1 {
     font-size: 36px;
     line-height: 48px;
+  }
+
+  .hero-image {
+    height: 36vh;
   }
 
   .gpt3__header-content p {
