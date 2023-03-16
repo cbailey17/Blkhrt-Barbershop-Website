@@ -14,7 +14,7 @@ const App = () => {
         <Header />
         <Carousel images={images} />
         <Map />
-        <BasicSpeedDial className="dial" />
+        <BasicSpeedDial />
       </div>
       <Footer />
     </div>
