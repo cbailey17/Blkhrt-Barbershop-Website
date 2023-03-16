@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-// import airplane from '../../assets/airplane.png';
+import airplane from '../../assets/airplane.png';
 import './map.css';
 
 const Gmap = () => {
@@ -16,10 +16,10 @@ const Gmap = () => {
       </div>
       <div>
         <a href="https://maps.google.com/?q=BLKHRT">
-          {/* <button href="https://maps.google.com/?q=BLKHRT" id="directions">
+          <button href="https://maps.google.com/?q=BLKHRT" id="directions">
             <img id="mapButton" src={airplane} />
             <p>DIRECTIONS</p>
-          </button> */}
+          </button>
         </a>
       </div>
       <div>

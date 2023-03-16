@@ -10,9 +10,9 @@ const Header = () => (
       <h1 className="text-white text-5xl lg:text-7xl">BLKHRT Barbershop</h1>
       <p className="text-white text-lg lg:text-2xl pt-5">
         Check Out The Shop
-        <motion.div transition={{ type: 'spring', delay: 0.5 }} whileHover={{ scale: 1.6 }}>
+        <motion.span transition={{ type: 'spring', delay: 0.5 }} whileHover={{ scale: 1.6 }}>
           <BsArrowDownCircle className="pl-5 w-70 grow inline" color="#fff" size={44} id="arrow" />
-        </motion.div>
+        </motion.span>
       </p>
       <button
         onClick={openBooksy}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
+import logoBw from '../../assets/BudweiserBLKHRT.png';
 import { useState } from 'react';
 import { openBooksy } from '../../hooks/openBooksy';
 
@@ -29,14 +30,16 @@ const Navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <img src={logo} id="logo" />
+          <img src={logoBw} id="logo" />
         </div>
         <div className="gpt3__navbar-links_container">
           <Menu />
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Directions</p>
+        <a href="https://maps.google.com/?q=BLKHRT">
+          <p>Directions</p>
+        </a>
         <button onClick={openBooksy} type="button" className="bg-black-900 text-black">
           Book Now
         </button>
@@ -52,7 +55,9 @@ const Navbar = () => {
             <div className="gpt3__navbar-menu_container-links">
               <Menu />
               <div className="gpt3__navbar-menu_container-links-sign">
-                <p>Directions</p>
+                <a href="https://maps.google.com/?q=BLKHRT">
+                  <p>Directions</p>
+                </a>
                 <button onClick={openBooksy} type="button" className="text-red">
                   Book Now
                 </button>

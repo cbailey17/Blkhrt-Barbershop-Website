@@ -8,6 +8,10 @@
   z-index: 5;
 }
 
+#logo {
+  width: 120px;
+}
+
 .gpt3__navbar-links {
   flex: 1;
   display: flex;
