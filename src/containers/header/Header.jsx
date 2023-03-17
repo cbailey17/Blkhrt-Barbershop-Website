@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { openBooksy } from '../../hooks/openBooksy';
 
 const Header = () => (
-  <div className="hero-image gpt3__header section__padding" id="home">
+  <div className="hero-image gpt3__header section__padding overflow-hidden" id="home">
     <div className="hero-text">
       <h1 className="text-white text-5xl lg:text-7xl">BLKHRT Barbershop</h1>
       <p className="text-white text-lg lg:text-2xl pt-5">

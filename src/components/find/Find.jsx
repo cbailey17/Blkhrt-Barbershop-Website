@@ -9,17 +9,19 @@ const Find = () => {
     <div id="find-us" className="flex">
       <div id="contact" className="flex pl-4 grow">
         <div>
-          <div id="header" className="text-navy font-bold text-2xl pt-8">
+          <div
+            id="header"
+            className="text-navy font-bold text-2xl pt-0 md:pt-8 lg:pt-8 xl:pt-8 2xl:pt-8">
             Come Find Us
           </div>
-          <p className="text-white">1952 Balboa Ave, San Diego, CA 92109</p>
+          <p className="subtext text-white">1952 Balboa Ave, San Diego, CA 92109</p>
           <div className="relative top-6">
             <h1 id="header" className="text-navy text-2xl font-bold">
               HOURS
             </h1>
-            <h4 className="text-white">TUE - FRI: 11AM - 7PM</h4>
-            <h4 className="text-white">SAT: 11AM - 4PM</h4>
-            <h4 className="text-white">SUN - MON: CLOSED</h4>
+            <h4 className="subtext text-white">TUE - FRI: 11AM - 7PM</h4>
+            <h4 className="subtext text-white">SAT: 11AM - 4PM</h4>
+            <h4 className="subtext text-white">SUN - MON: CLOSED</h4>
           </div>
           <div className="pt-9">
             <img id="under" className=" sm:hidden md:hidden hidden" src={underline}></img>

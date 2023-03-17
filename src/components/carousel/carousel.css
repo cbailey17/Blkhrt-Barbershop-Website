@@ -72,4 +72,10 @@
   #carousel-title {
     font-size: 1.4em;
   }
+  .photos {
+    height: 240px;
+  }
+  .photo-container {
+    height: 35vh;
+  }
 }

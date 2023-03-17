@@ -2,7 +2,6 @@
     width: 45vw;
     height: 30vh;
     position: relative;
-    /* left: calc(100vw - 95vw); */
     border-radius: 10px;
 }
 
@@ -106,5 +105,11 @@
     }
     #contact {
         margin-top: 25px;
+    }
+    #header {
+        font-size: 18px;
+    }
+    .subtext {
+        font-size: 14px;
     }
 }
