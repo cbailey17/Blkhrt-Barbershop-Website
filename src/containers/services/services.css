@@ -1,0 +1,22 @@
+#title {
+    font-family: 'Caveat', cursive;
+    margin-top: 40px;
+}
+
+div#service-icon svg {
+    color:white;
+    font-size:4em;
+}
+
+div#service-icon p {
+    font-family: 'Caveat', cursive;
+    font-size: 1.7em;
+}
+
+div#service-icon {
+    text-align: center;
+}
+
+.services {
+    /* background: var(--gradient-button); */
+}

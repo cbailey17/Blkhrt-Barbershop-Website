@@ -1,12 +1,53 @@
 .map {
-    width: 90vw;
+    width: 45vw;
+    height: 30vh;
     position: relative;
-    left: calc(100vw - 95vw);
+    /* left: calc(100vw - 95vw); */
     border-radius: 10px;
 }
 
 #contact {
     margin-bottom: 50px;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    width: 45vw;
+    position: relative;
+    background-color: rgb(30 41 59);
+    height: 30vh;
+    border-radius: 10px;
+    font-family: var(--font-family);
+}
+
+#under {
+    color: white;
+}
+
+#header {
+    font-weight: 1000;
+}
+
+#name {
+    font-family: 'Caveat', cursive;;
+    font-size: 2em;
+}
+
+#avatar {
+    -webkit-box-shadow:0 0 20px white; 
+    -moz-box-shadow: 0 0 20px white; 
+    box-shadow:0 0 20px white;
+}
+
+#mapButton {
+    width: 25px;
+}
+
+#direction {
+    font-family: var(--font-family);
+}
+
+#find-button {
+    background: var(--gradient-direction);
+}
+
+#directions {
+    background: var(--gradient-direction);
+
 }

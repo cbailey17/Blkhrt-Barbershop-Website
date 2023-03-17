@@ -1,19 +1,30 @@
+/* eslint-disable no-undef */
 import React from 'react';
-import yelp from '../../assets/yelp.svg';
-import instag from '../../assets/instag.png';
 import './footer.css';
+
+import { FaYelp } from 'react-icons/fa';
+import { RiFacebookCircleFill } from 'react-icons/ri';
+import { RiInstagramFill } from 'react-icons/ri';
+import { RiNavigationFill } from 'react-icons/ri';
+import { Link } from '@mui/material';
 
 const Footer = () => {
   return (
     <div>
       <footer className="w-full bg-slate-800 flex flex-col">
-        <div className="flex self-center py-10">
-          <a href="https://www.yelp.com/biz/blkhrt-barbershop-san-diego">
-            <img className="px-4" id="copyright" src={yelp} />
-          </a>
-          <a href="https://www.instagram.com/blkhrt/">
-            <img className="px-4" id="copyright" src={instag} />
-          </a>
+        <div id="socials" className="flex self-center py-10">
+          <Link href="https://www.facebook.com/blkhrtbarbershop/">
+            <RiFacebookCircleFill color="white" className="mx-2" />
+          </Link>
+          <Link href="https://www.instagram.com/blkhrt/">
+            <RiInstagramFill color="white" className="mx-2" />
+          </Link>
+          <Link href="https://maps.google.com/?q=BLKHRT">
+            <RiNavigationFill color="white" className="mx-2" />
+          </Link>
+          <Link href="https://www.yelp.com/biz/blkhrt-barbershop-san-diego">
+            <FaYelp color="white" className="mx-2" />
+          </Link>
         </div>
         <h3 id="copy" className="text-white text-center pb-8">
           Copyright &copy; 2015 BLKHRT - All Rights Reserved.

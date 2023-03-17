@@ -10,6 +10,9 @@
 
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --gradient-button: linear-gradient(90deg, rgba(30,41,59,1) 0%, rgba(30,41,121,1) 43%, rgba(47,141,175,1) 100%);
+  --gradient-header: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  --gradient-direction: linear-gradient(90deg, rgba(10,16,27,1) 0%, rgba(16,25,92,1) 43%, rgba(13,35,43,1) 100%);
 
   --color-bg: #040c18;
   --color-footer: #031b34;

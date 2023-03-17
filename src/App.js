@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import { images } from './constants.js';
 
-import { Footer, Map, Header } from './containers';
-import { Navbar, Booking, Carousel, BasicSpeedDial } from './components';
+import { Footer, Map, Header, Services } from './containers';
+import { Navbar, Booking, Carousel } from './components';
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
         <Navbar />
         <Header />
         <Carousel images={images} />
+        <Services />
         <Map />
-        <BasicSpeedDial />
       </div>
       <Footer />
     </div>

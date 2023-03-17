@@ -45,6 +45,10 @@
   text-align: center;
 }
 
+.hero-text p, .hero-text h1 {
+  background-color: var(--gradient-header);
+}
+
 .book {
   padding: 0.5rem 1rem;
   color: #fff;
@@ -58,7 +62,10 @@
   cursor: pointer;
   border-radius: 5px;
   min-width: 120px;
-  box-shadow: 0 0 40px 10px #fff, /* inner white */ 0 0 90px 30px #EE4B2B, /* middle magenta */ 0 0 140px 15px rgb(49, 7, 7);
+  /* box-shadow: 0 0 40px 10px #fff, inner white 0 0 90px 30px #EE4B2B, middle magenta 0 0 140px 15px rgb(49, 7, 7); */
+  -webkit-box-shadow: 0 0 20px white; 
+  -moz-box-shadow: 0 0 20px white; 
+  box-shadow:0 0 20px white, 0 0 90px 20px #EE4B2B;
 }
 
 .hero-image {
@@ -113,8 +120,16 @@
     flex-direction: column;
   }
 
+  .hero-image {
+    overflow-y: hidden;
+  }
+
   .gpt3__header-content__people p {
     margin: 0;
+  }
+
+  .css-1jpo0ts-MuiSpeedDial-root {
+    bottom: -20px !important;
   }
 
   .gpt3__header-content__input input,
@@ -132,6 +147,16 @@
 
   .hero-image {
     height: 36vh;
+    overflow-y: hidden;
+  }
+
+  .css-1jpo0ts-MuiSpeedDial-root {
+    bottom: -20px !important;
+  }
+
+  .css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+    height: 30px !important;
+    width: 30px !important;
   }
 
   .gpt3__header-content p {

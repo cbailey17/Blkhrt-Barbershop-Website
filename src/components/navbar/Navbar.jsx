@@ -8,16 +8,16 @@ import { openBooksy } from '../../hooks/openBooksy';
 
 const Menu = () => (
   <>
-    <p>
+    <p className="hover:scale-[1.2] ease-out duration-300">
       <a href="#about">About</a>
     </p>
-    <p>
+    <p className="hover:scale-[1.2] ease-out duration-300">
       <a href="#wgpt3">Shop Photos</a>
     </p>
-    <p>
+    <p className="hover:scale-[1.2] ease-out duration-300">
       <a href="#possibility">Services</a>
     </p>
-    <p>
+    <p className="hover:scale-[1.2] ease-out duration-300">
       <a href="#features">Find Us</a>
     </p>
   </>
@@ -38,9 +38,13 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-sign">
         <a href="https://maps.google.com/?q=BLKHRT">
-          <p>Directions</p>
+          <p className="hover:scale-[1.2] ease-out duration-300">Directions</p>
         </a>
-        <button onClick={openBooksy} type="button" className="bg-black-900 text-black">
+        <button
+          id="button"
+          onClick={openBooksy}
+          type="button"
+          className="bg-black-900 text-black hover:scale-[1.2] ease-out duration-300">
           Book Now
         </button>
       </div>
@@ -58,7 +62,7 @@ const Navbar = () => {
                 <a href="https://maps.google.com/?q=BLKHRT">
                   <p>Directions</p>
                 </a>
-                <button onClick={openBooksy} type="button" className="text-red">
+                <button id="button" onClick={openBooksy} type="button" className="text-red">
                   Book Now
                 </button>
               </div>

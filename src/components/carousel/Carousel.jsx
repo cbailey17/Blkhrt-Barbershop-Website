@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import SwiperCore, { Pagination, EffectCoverflow } from 'swiper';
+import SwiperCore, { Pagination, EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import React from 'react';
 import 'swiper/css';
@@ -9,17 +9,15 @@ import './carousel.css';
 import PropTypes from 'prop-types';
 
 const Carousel = ({ images }) => {
-  SwiperCore.use([Pagination, EffectCoverflow]);
+  SwiperCore.use([Pagination, EffectCoverflow, Autoplay]);
 
   const slides = images.map((image) => {
     return (
       <SwiperSlide key={image.id} className="swiper-slide">
-        <div className="slide-content">
-          <img
-            className="photos"
-            src={require('../../assets/' + image.folder + '/' + image.photo + image.fileExtension)}
-          />
-        </div>
+        <img
+          className="photos"
+          src={require('../../assets/' + image.folder + '/' + image.photo + image.fileExtension)}
+        />
       </SwiperSlide>
     );
   });
@@ -34,7 +32,6 @@ const Carousel = ({ images }) => {
           slidesPerView={3}
           autoplay={true}
           loop={true}
-          initialSlide={0}
           effect="coverflow"
           grabCursor="true"
           centeredSlides="true"
@@ -63,7 +60,7 @@ const Carousel = ({ images }) => {
             },
             300: {
               spaceBetween: 0,
-              slidesPerView: 1
+              slidesPerView: 2
             }
           }}>
           {slides}

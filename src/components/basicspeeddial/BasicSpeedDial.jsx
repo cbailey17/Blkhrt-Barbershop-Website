@@ -20,7 +20,7 @@ const actions = [
   },
   {
     icon: (
-      <Link href="https://maps.google.com/?q=BLKHRT'">
+      <Link href="https://maps.google.com/?q=BLKHRT">
         <NavigationIcon />
       </Link>
     ),
@@ -49,7 +49,7 @@ export default function BasicSpeedDial() {
     <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
         ariaLabel="blkhrt speed dial"
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+        sx={{ position: 'fixed', bottom: -300, right: 16 }}
         icon={<SpeedDialIcon />}>
         {actions.map((action) => (
           <SpeedDialAction key={action.name} icon={action.icon} tooltipTitle={action.name} />
