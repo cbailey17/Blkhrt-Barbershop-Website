@@ -2,23 +2,34 @@ import React from 'react';
 import './App.css';
 import { images } from './constants.js';
 
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Footer, Map, Header, Services } from './containers';
-import { Navbar, Booking, Carousel, BasicSpeedDial } from './components';
+import { Navbar, Booking, Carousel } from './components';
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="gradient__bg">
-        <Booking />
-        <Navbar />
-        <Header />
-        <Carousel images={images} />
-        <Services />
-        <BasicSpeedDial />
-        <Map />
+    <BrowserRouter>
+      <div className="App">
+        <div className="gradient__bg">
+          <Booking />
+          <Navbar />
+          <Header />
+          <Link to="#haircuts" smooth>
+            <Carousel images={images} />
+          </Link>
+          <Link to="#services" smooth>
+            <Services />
+          </Link>
+          <Link to="#findus" smooth>
+            <Map />
+          </Link>
+        </div>
+        <Link to="#socialmedia" smooth>
+          <Footer />
+        </Link>
       </div>
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 };
 

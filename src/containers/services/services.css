@@ -10,7 +10,7 @@ div#service-icon svg {
 
 div#service-icon p {
     font-family: 'Caveat', cursive;
-    font-size: 1.7em;
+    /* font-size: 1.7em; */
 }
 
 div#service-icon {

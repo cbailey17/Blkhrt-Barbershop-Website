@@ -6,8 +6,8 @@ import anthony from '../../assets/anthony.jpg';
 
 const Find = () => {
   return (
-    <div id="find-us" className="flex justify-around">
-      <div id="contact" className="flex pl-4">
+    <div id="find-us" className="flex">
+      <div id="contact" className="flex pl-4 grow">
         <div>
           <div id="header" className="text-navy font-bold text-2xl pt-8">
             Come Find Us
@@ -22,7 +22,7 @@ const Find = () => {
             <h4 className="text-white">SUN - MON: CLOSED</h4>
           </div>
           <div className="pt-9">
-            <img id="under" src={underline}></img>
+            <img id="under" className=" sm:hidden md:hidden hidden" src={underline}></img>
           </div>
         </div>
         <div className="flex self-center grow justify-center">
@@ -33,7 +33,9 @@ const Find = () => {
               className="mx-12 sm:mx-2 md:mx-4"
               alt="Woody Donahue"
               src={woody}></Avatar>
-            <h1 id="name" className="text-center text-white pt-4">
+            <h1
+              id="name"
+              className="text-center text-white pt-4  text-2xl sm:text-2xl md:text-2xl lg-text-4xl xl:text-4xl 2xl:text-4xl">
               Woody
             </h1>
           </div>
@@ -44,7 +46,9 @@ const Find = () => {
               className="mx-12"
               alt="Anthony Something"
               src={anthony}></Avatar>
-            <h1 id="name" className="text-center  text-white pt-4">
+            <h1
+              id="name"
+              className="text-center text-white pt-4 text-2xl sm:text-2xl md:text-2xl lg-text-4xl xl:text-4xl 2xl:text-4xl">
               Anthony
             </h1>
           </div>

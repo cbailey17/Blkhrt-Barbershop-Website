@@ -26,7 +26,6 @@
 
 #name {
     font-family: 'Caveat', cursive;;
-    font-size: 2em;
 }
 
 #avatar {
@@ -61,9 +60,18 @@
 
 @media screen and (max-width: 1070px) {
     #avatar {
-        width: 100px;
-        height: 100px;
-        margin: 0.2rem;
+        width: 150px;
+        height: 150px;
+        margin: 0.8rem;
+    }
+    .map {
+        width: 100vw;
+    }
+    #find-us {
+        width: 100vw;
+    }
+    #contact {
+        margin-top: 25px;
     }
 }
   
@@ -73,6 +81,15 @@
         height: 100px;
         margin: 0.2rem;
     }
+    .map {
+        width: 100vw;
+    }
+    #find-us {
+        width: 100vw;
+    }
+    #contact {
+        margin-top: 25px;
+    }
 }
   
   @media screen and (max-width: 550px) {
@@ -80,5 +97,14 @@
         width: 75px;
         height: 75px;
         margin: 0.2rem;
+    }
+    .map {
+        width: 100vw;
+    }
+    #find-us {
+        width: 100vw;
+    }
+    #contact {
+        margin-top: 25px;
     }
 }

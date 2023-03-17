@@ -12,13 +12,13 @@ const Menu = () => (
       <a href="#about">About</a>
     </p>
     <p className="hover:scale-[1.2] ease-out duration-300">
-      <a href="#wgpt3">Shop Photos</a>
+      <a href="#haircuts">Shop Photos</a>
     </p>
     <p className="hover:scale-[1.2] ease-out duration-300">
-      <a href="#possibility">Services</a>
+      <a href="#services">Services</a>
     </p>
     <p className="hover:scale-[1.2] ease-out duration-300">
-      <a href="#features">Find Us</a>
+      <a href="#findus">Find Us</a>
     </p>
   </>
 );

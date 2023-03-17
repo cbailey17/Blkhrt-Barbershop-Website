@@ -10,7 +10,7 @@ import { Link } from '@mui/material';
 
 const Footer = () => {
   return (
-    <div>
+    <div id="socialmedia">
       <footer className="w-full bg-slate-800 flex flex-col">
         <div id="socials" className="flex self-center py-10">
           <Link href="https://www.facebook.com/blkhrtbarbershop/">

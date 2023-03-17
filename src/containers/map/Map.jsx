@@ -7,7 +7,7 @@ import { Find } from '../../components/';
 const Gmap = () => {
   return (
     <div>
-      <div id="map" className="relative">
+      <div id="map" className="relative w-full sm:w-full md:w-full">
         <div id="find-button" className="z-50 hover:scale-[1.2] ease-in duration-300 relative">
           <a href="https://maps.google.com/?q=BLKHRT">
             <button
@@ -32,7 +32,9 @@ const Gmap = () => {
 
 export const Map = () => {
   return (
-    <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row md:justify-start lg:justify-evenly xl:justify-evenly">
+    <div
+      id="findus"
+      className="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row md:justify-start lg:justify-evenly xl:justify-evenly">
       <Gmap />
       <Find />
     </div>

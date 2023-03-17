@@ -24,7 +24,7 @@ const Carousel = ({ images }) => {
 
   return (
     <>
-      <h1 id="carousel-title" className="text-white text-center sm:text-sm md:text-md">
+      <h1 id="haircuts" className="carousel-title text-white text-center sm:text-sm md:text-md">
         Cold beer, great energy, and even better haircuts
       </h1>
       <div className="photo-container">
