@@ -51,3 +51,34 @@
     background: var(--gradient-direction);
 
 }
+@media screen and (max-width: 1550px) {
+    #avatar {
+        width: 150px;
+        height: 150px;
+        margin: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    #avatar {
+        width: 100px;
+        height: 100px;
+        margin: 0.2rem;
+    }
+}
+  
+  @media screen and (max-width: 700px) {
+    #avatar {
+        width: 100px;
+        height: 100px;
+        margin: 0.2rem;
+    }
+}
+  
+  @media screen and (max-width: 550px) {
+    #avatar {
+        width: 75px;
+        height: 75px;
+        margin: 0.2rem;
+    }
+}

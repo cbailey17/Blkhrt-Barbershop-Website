@@ -30,7 +30,7 @@ const Find = () => {
             <Avatar
               id="avatar"
               sx={{ width: 200, height: 200 }}
-              className="mx-12"
+              className="mx-12 sm:mx-2 md:mx-4"
               alt="Woody Donahue"
               src={woody}></Avatar>
             <h1 id="name" className="text-center text-white pt-4">

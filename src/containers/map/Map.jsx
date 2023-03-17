@@ -2,6 +2,7 @@ import React from 'react';
 import './map.css';
 import { RiNavigationFill } from 'react-icons/ri';
 import { Find } from '../../components/';
+// sm:left-[280px] md:left-[280px]
 
 const Gmap = () => {
   return (
