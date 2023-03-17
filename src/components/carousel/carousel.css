@@ -39,7 +39,7 @@
   height: 45vh;
   width: 100%;
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .photos {

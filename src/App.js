@@ -3,7 +3,7 @@ import './App.css';
 import { images } from './constants.js';
 
 import { Footer, Map, Header, Services } from './containers';
-import { Navbar, Booking, Carousel } from './components';
+import { Navbar, Booking, Carousel, BasicSpeedDial } from './components';
 
 const App = () => {
   return (
@@ -14,6 +14,7 @@ const App = () => {
         <Header />
         <Carousel images={images} />
         <Services />
+        <BasicSpeedDial />
         <Map />
       </div>
       <Footer />

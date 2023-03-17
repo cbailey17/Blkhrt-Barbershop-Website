@@ -21,7 +21,7 @@ const Find = () => {
             <h4 className="text-white">SAT: 11AM - 4PM</h4>
             <h4 className="text-white">SUN - MON: CLOSED</h4>
           </div>
-          <div className="pt-12">
+          <div className="pt-9">
             <img id="under" src={underline}></img>
           </div>
         </div>
