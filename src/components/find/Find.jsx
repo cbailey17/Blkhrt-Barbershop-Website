@@ -9,7 +9,7 @@ const Find = () => {
     <div id="find-us" className="flex justify-around">
       <div id="contact" className="flex pl-4">
         <div>
-          <div id="header" className="text-navy font-bold text-2xl pt-12">
+          <div id="header" className="text-navy font-bold text-2xl pt-8">
             Come Find Us
           </div>
           <p className="text-white">1952 Balboa Ave, San Diego, CA 92109</p>
