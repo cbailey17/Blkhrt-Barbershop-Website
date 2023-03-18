@@ -14,6 +14,7 @@ const Carousel = ({ images }) => {
     return (
       <SwiperSlide key={image.id} className="swiper-slide">
         <img
+          id="slideImg"
           alt={image.photo}
           className="photos"
           src={require('../../assets/' +

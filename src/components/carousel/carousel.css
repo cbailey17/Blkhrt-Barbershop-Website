@@ -42,6 +42,10 @@
   overflow: hidden;
 }
 
+#slideImg {
+  aspect-ratio: 1 / 1;
+}
+
 .photos {
   background-position: center;
   border-radius: 20px;
