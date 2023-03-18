@@ -2,8 +2,7 @@
 import SwiperCore, { Pagination, EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import React from 'react';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/bundle';
 import 'swiper/css/effect-coverflow';
 import './carousel.css';
 import PropTypes from 'prop-types';
@@ -15,8 +14,14 @@ const Carousel = ({ images }) => {
     return (
       <SwiperSlide key={image.id} className="swiper-slide">
         <img
+          alt={image.photo}
           className="photos"
-          src={require('../../assets/' + image.folder + '/' + image.photo + image.fileExtension)}
+          src={require('../../assets/' +
+            image.folder +
+            '/' +
+            image.photo +
+            '-min' +
+            image.fileExtension)}
         />
       </SwiperSlide>
     );

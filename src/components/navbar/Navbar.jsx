@@ -2,7 +2,7 @@ import React from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 // import logo from '../../assets/logo.png';
-import logoBw from '../../assets/BudweiserBLKHRT.png';
+import logoBw from '../../assets/BudweiserBLKHRT-min.png';
 import { useState } from 'react';
 import { openBooksy } from '../../hooks/openBooksy';
 
@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <img src={logoBw} id="logo" />
+          <img alt="logo" src={logoBw} id="logo" />
         </div>
         <div className="gpt3__navbar-links_container">
           <Menu />

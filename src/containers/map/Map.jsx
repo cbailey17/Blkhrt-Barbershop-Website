@@ -21,6 +21,7 @@ const Gmap = () => {
           </a>
         </div>
         <iframe
+          title="googlemap"
           className="map"
           referrerPolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpvPj658khiER_se2HT21-QoDcuayH4UQ&q=BLKHRT"

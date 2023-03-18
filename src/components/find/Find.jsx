@@ -1,8 +1,8 @@
 import React from 'react';
 import underline from '../../assets/svg/underline.svg';
 import Avatar from '@mui/material/Avatar';
-import woody from '../../assets/woody.jpg';
-import anthony from '../../assets/anthony.jpg';
+import woody from '../../assets/woody-min.jpg';
+import anthony from '../../assets/anthony-min.jpg';
 
 const Find = () => {
   return (
@@ -24,7 +24,11 @@ const Find = () => {
             <h4 className="subtext text-white">SUN - MON: CLOSED</h4>
           </div>
           <div className="pt-9">
-            <img id="under" className=" sm:hidden md:hidden hidden" src={underline}></img>
+            <img
+              alt="underline"
+              id="under"
+              className=" sm:hidden md:hidden hidden"
+              src={underline}></img>
           </div>
         </div>
         <div className="flex self-center grow justify-center">
