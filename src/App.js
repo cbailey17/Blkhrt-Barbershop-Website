@@ -1,3 +1,7 @@
+import ReactGA from 'react-ga';
+const TRACKING_ID = 'G-R5QH8VEY0E';
+ReactGA.initialize(TRACKING_ID);
+
 import React from 'react';
 import './App.css';
 import { images } from './constants.js';
